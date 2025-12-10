@@ -33,4 +33,19 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.          
+          echo test, and deploy your project.       
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo Hellou, world!
+
+      - name: Run multi messages
+        run: |
+          echo line 1
+          echo line 2
+  
