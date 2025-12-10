@@ -37,6 +37,8 @@ jobs:
 
   deploy-dev:
     needs: build
+    environment:
+      name: desenvolvimento
     runs-on: ubuntu-latest
 
     steps:
