@@ -45,7 +45,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Print Message
-        run: echo Hellou, world!
+        run: echo Hellou, world! ${{ secrets.SECRET_REPO }}
 
       - name: Run multi messages
         run: |
