@@ -37,8 +37,21 @@ jobs:
 
   deploy-dev:
     needs: build
-    environment:
-      name: desenvolvimento
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo Hellou, world! ${{ secrets.SECRET_DEV }}
+
+      - name: Run multi messages
+        run: |
+          echo line 1
+          echo line 2
+
+  deploy-hml:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
