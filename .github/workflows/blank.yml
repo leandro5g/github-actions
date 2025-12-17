@@ -41,7 +41,7 @@ jobs:
 
   deploy-dev:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, macOS]
 
     steps:
       - uses: actions/checkout@v4
