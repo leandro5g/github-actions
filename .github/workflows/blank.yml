@@ -68,7 +68,7 @@ jobs:
   deploy-prod:
     needs: build
     uses: leandro5g/pipeline_template/.github/workflows/demo-deploy.yml@main
-    with:
-      variavel_demo: "Demo Dev"
+      with:
+        variavel_demo: "Demo Dev"
 
   
